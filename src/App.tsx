@@ -1,11 +1,12 @@
 import React from "react";
+import { Hero } from "./components/hero/hero.component";
 
-function App() {
+export const App = () => {
   return (
     <div>
-      <h1>Ola mundo!</h1>
+      <Hero />
     </div>
   );
-}
+};
 
 export default App;
