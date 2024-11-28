@@ -4,9 +4,9 @@ interface NavBarDesktopProps {
   menuItems: { label: string; link: string }[];
 }
 
-export const NavBarDesktop: React.FC<NavBarDesktopProps> = ({ menuItems }) => {
+export const NavbarDesktop: React.FC<NavBarDesktopProps> = ({ menuItems }) => {
   return (
-    <div>
+    <div className="hidden md:flex gap-10 items-center justify-around">
       {menuItems.map((item, index) => (
         <a
           key={index}
