@@ -11,7 +11,10 @@ export const Navbar = () => {
     { label: "Contato", link: "/contato" },
   ];
   return (
-    <div className="flex flex-col items-center justify-around p-4 h-18 w-100% shadow-xl bg-[#bf9075] md:flex-row md:justify-around md:items-center md:px-24 md:h-10  ">
+    <div className="flex flex-row p-2 items-center justify-between h-18 w-100% shadow-xl bg-[#bf9075] md:flex-row md:justify-between md:items-center md:px-24 md:p-0 md:h-18">
+      <div className="flex gap-4">
+        <h1 className="text-2xl text-white">Isabelly Vitorino</h1>
+      </div>
       <NavbarDesktop menuItems={menuItems} />
       <NavbarMobile menuItems={menuItems} />
     </div>

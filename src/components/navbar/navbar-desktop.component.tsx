@@ -6,12 +6,12 @@ interface NavBarDesktopProps {
 
 export const NavbarDesktop: React.FC<NavBarDesktopProps> = ({ menuItems }) => {
   return (
-    <div className="hidden md:flex gap-10 items-center justify-around">
+    <div className="hidden md:flex gap-6 items-center justify-around">
       {menuItems.map((item, index) => (
         <a
           key={index}
           href={item.link}
-          className="p-4 text-white hover:text-[#8c5230]"
+          className="p-2 text-white py-8 items-center hover:text-[#8c5230] hover:bg-white"
         >
           {item.label}
         </a>

@@ -52,12 +52,12 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ menuItems }) => {
         ></path>
       </svg>
       {isMenuOpen && (
-        <div className="absolut top-16 left-0 right-0 bg-[#8c5230] z-10 border rounded-md shadow-md">
-          <ul className="flex flex-row items-center md:flex-row md:items-center gap-4 p-4">
+        <div className="absolute top-12 left-10 right-10 bg-[#8c5230] border rounded-md shadow-md">
+          <ul className="flex flex-row items-center md:items-center gap-4 p-4">
             {menuItems.map((item, index) => (
               <li key={index}>
                 <a
-                  className="text-white hover:text-[#8c5230]"
+                  className="text-white hover:text-black"
                   href={item.link}
                 >
                   {item.label}
