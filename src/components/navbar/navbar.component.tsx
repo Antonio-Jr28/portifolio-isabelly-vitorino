@@ -1,4 +1,4 @@
-import { link } from "fs";
+import { Link } from "react-router-dom";
 import React from "react";
 import { NavBarDesktop } from "./navbar-desktop.component";
 

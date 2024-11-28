@@ -11,7 +11,7 @@ export const NavBarDesktop: React.FC<NavBarDesktopProps> = ({ menuItems }) => {
         <a
           key={index}
           href={item.link}
-          className="p-5 text-white hover:text-[#8c5230]"
+          className="p-4 text-white hover:text-[#8c5230]"
         >
           {item.label}
         </a>
