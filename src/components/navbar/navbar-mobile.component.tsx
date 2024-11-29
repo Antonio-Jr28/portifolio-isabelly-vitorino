@@ -1,4 +1,3 @@
-import { memoryUsage } from "process";
 import React, { useEffect, useState, useRef } from "react";
 
 interface NavbarMobileProps {
@@ -6,15 +5,15 @@ interface NavbarMobileProps {
 }
 
 export const NavbarMobile: React.FC<NavbarMobileProps> = ({ menuItems }) => {
-  const [isMenuOpen, setIsmenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
-    setIsmenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
-    setIsmenuOpen(false);
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -27,17 +26,17 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ menuItems }) => {
       }
     };
 
-    document.addEventListener("click", handleOutsideClick);
+    document.addEventListener("mousedown", handleOutsideClick);
 
     return () => {
-      document.removeEventListener("click", handleOutsideClick);
+      document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
 
   return (
-    <div className="md:hidden cursor-pointer" ref={menuRef}>
+    <div className="relative md:hidden">
       <svg
-        className="w-6 h-6"
+        className="w-6 h-6 cursor-pointer"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -51,21 +50,38 @@ export const NavbarMobile: React.FC<NavbarMobileProps> = ({ menuItems }) => {
           d="M4 6h16M4 12h16m-7 6h7"
         ></path>
       </svg>
+
+      <div
+        ref={menuRef}
+        className={`fixed top-0 right-0 h-full w-64 bg-[#8c5230] transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 z-40 shadow-lg`}
+      >
+        <button
+          className="text-white p-4"
+          onClick={closeMenu}
+        >
+          ✖ Fechar
+        </button>
+        <ul className="p-4 space-y-4">
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <a
+                className="text-white hover:text-black"
+                href={item.link}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       {isMenuOpen && (
-        <div className="absolute top-12 left-10 right-10 bg-[#8c5230] border rounded-md shadow-md">
-          <ul className="flex flex-row items-center md:items-center gap-4 p-4">
-            {menuItems.map((item, index) => (
-              <li key={index}>
-                <a
-                  className="text-white hover:text-black"
-                  href={item.link}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div
+          className="fixed inset-0 bg-black bg-opacity-40 z-30"
+          onClick={closeMenu}
+        ></div>
       )}
     </div>
   );
