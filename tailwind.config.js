@@ -8,7 +8,7 @@ module.exports = {
         segundaria: "#8C5230",
         botao1: "#D9B29C",
         background: "#592F16",
-        background2: "#402921"
+        background2: "#402921",
       },
       fontSize: {
         "2xl": "1.75rem",
@@ -19,13 +19,12 @@ module.exports = {
         normal: 400,
         medium: 500,
         bold: 700,
-
       },
-      lineHeight : {
+      lineHeight: {
         tight: 1.2,
         normal: 1.5,
-        relaxed: 1.75
-      }
+        relaxed: 1.75,
+      },
     },
   },
   plugins: [],

@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { NewsCard } from "./news-card-works.component";
 import { news } from "../../data/newsData";
+import { SwiperNavButton } from "./swiper-nav-button";
 
 export const WorksAll = () => {
   return (
@@ -15,7 +16,6 @@ export const WorksAll = () => {
         <Swiper
           modules={[Navigation, Autoplay]}
           pagination={{ clickable: true }}
-          navigation
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -39,6 +39,7 @@ export const WorksAll = () => {
               />
             </SwiperSlide>
           ))}
+          <SwiperNavButton />
         </Swiper>
       </div>
     </>
