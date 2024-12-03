@@ -2,16 +2,16 @@ import React from "react";
 
 export const AboutUsSection = () => {
   return (
-    <div className="flex flex-col py-6 h-[1000px] justify-around gap-8 w-full bg-[#8C5230] md:h-[600px] md:flex-row">
-      <div className="md:w-[600px] md:bg-[#BF9075]">
+    <div className="flex flex-col py-6 h-[1000px] justify-around gap-8 w-full bg-[#f2c879] md:h-[600px] md:flex-row">
+      <div>
         <img
           src="image/isabelly-vitorino.png"
           className="md:w-[300px] md:h-[400px] md:ml-[150px] md:mt-20 items-center"
         />
       </div>
       <div className="flex flex-col md:w-[500px] md:flex-col justify-center items-center">
-        <h1 className="text-white text-3xl text-center mt-6">Sobre mim</h1>
-        <p className="mt-6 text-white">
+        <h1 className="text-black text-3xl text-center mt-6">Sobre mim</h1>
+        <p className="mt-6 p-5 text-black">
           O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto
           da indústria tipográfica e de impressos, e vem sendo utilizado desde o
         </p>
