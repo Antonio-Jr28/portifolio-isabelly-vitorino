@@ -6,9 +6,9 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { NewsCard } from "./news-card-works.component";
 import { news } from "../../data/newsData";
-import { SwiperNavButton } from "./swiper-nav-button";
+import { SwiperNavButton } from "./swiper-nav-button-style";
 
-export const WorksAll = () => {
+export const WorksSection = () => {
   return (
     <>
       <div className="w-auto h-auto p-6 bg-gray-100">

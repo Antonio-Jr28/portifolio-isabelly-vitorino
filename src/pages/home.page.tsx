@@ -3,7 +3,7 @@ import React from "react";
 import { Navbar } from "../components/navbar/navbar.component";
 import { Hero } from "../components/hero/hero.component";
 import { AboutUsSection } from "../components/about-us/about-us.componets";
-import { WorksAll } from "../components/works/works-all.component";
+import { WorksSection } from "../components/works/works-section.component";
 
 export const HomePage = () => {
   return (
@@ -11,7 +11,7 @@ export const HomePage = () => {
       <Navbar />
       <Hero />
       <AboutUsSection />
-      <WorksAll />
+      <WorksSection />
     </>
   );
 };
