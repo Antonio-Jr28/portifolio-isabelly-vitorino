@@ -7,7 +7,6 @@ export const Navbar = () => {
   const menuItems = [
     { label: "Inicio", link: "/" },
     { label: "Sobre mim", link: "/sobre" },
-    { label: "Formação", link: "/formacao" },
     { label: "Trabalhos", link: "/trabalhos" },
     { label: "Contato", link: "/contato" },
   ];

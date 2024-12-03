@@ -9,7 +9,6 @@ export const MyRoutes = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/sobre" element={<AboutUsPage />} />
-        <Route path="/formacao" element={"/formacao"} />
         <Route path="/trabalhos" element="/trabalhos" />
         <Route path="/contato" element="/contato" />
       </Routes>
