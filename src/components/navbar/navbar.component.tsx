@@ -5,6 +5,7 @@ import { NavbarMobile } from "./navbar-mobile.component";
 
 export const Navbar = () => {
   const menuItems = [
+    { label: "Inicio", link: "/" },
     { label: "Sobre mim", link: "/sobre" },
     { label: "Formação", link: "/formacao" },
     { label: "Trabalhos", link: "/trabalhos" },
