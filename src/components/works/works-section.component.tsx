@@ -33,6 +33,7 @@ export const WorksSection = () => {
           {news.map((item, index) => (
             <SwiperSlide key={index}>
               <NewsCard
+                label={item.label}
                 imageSrc={item.imageSrc}
                 title={item.title}
                 content={item.content}
