@@ -12,10 +12,11 @@ export const NewsCard: React.FC<NewsCardProps> = ({
   content,
 }) => {
   return (
-    <div className="bg-[#A66329] border border-[#F2C879]">
-      <img src={imageSrc} alt={title} className="w-[312px] h-[150px]" />
-      <h1 className="text-2xl text-center">{title}</h1>
-      <p className="w-[312px] p-2">{content}</p>
+    <div className="flex flex-col items-center p-6 bg-[#A66329] border border-[#F2C879]">
+      <img src={imageSrc} alt={title} className="w-[500px] h-[150px]" />
+      <h1 className="text-2xl text-center text-white">{title}</h1>
+      <p className="w-[420px] text-center p-2">{content}</p>
+      <button className="w-52 border text-center">Ler mais</button>
     </div>
   );
 };

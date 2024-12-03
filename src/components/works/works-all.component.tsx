@@ -11,13 +11,13 @@ export const WorksAll = () => {
   return (
     <div className="w-auto h-auto p-6 bg-gray-100">
       <Swiper
-        modules={[Navigation, Autoplay]} 
+        modules={[Navigation, Autoplay]}
         pagination={{ clickable: true }}
         navigation
         autoplay={{
-          delay: 2000, 
-          disableOnInteraction: false, 
-          pauseOnMouseEnter: true, 
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         loop={true}
         spaceBetween={20}
