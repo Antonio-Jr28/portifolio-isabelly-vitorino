@@ -3,7 +3,7 @@ import React from "react";
 export const Hero = () => {
   return (
     <div
-      className="w-full h-[350px] bg-cover bg-bottom"
+      className="w-full h-[250px] md:h-[350px] bg-cover bg-bottom"
       style={{
         backgroundImage: "url('image/background.jpg')",
       }}

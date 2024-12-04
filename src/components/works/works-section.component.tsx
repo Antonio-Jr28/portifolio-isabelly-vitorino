@@ -11,7 +11,7 @@ import { SwiperNavButton } from "./swiper-nav-button-style";
 export const WorksSection = () => {
   return (
     <>
-      <div className="w-auto h-auto p-6 bg-gray-100">
+      <div className="w-auto h-auto p-6 bg-[#f2c879]">
         <h1 className="text-4xl text-center py-6">Trabalhos Recentes</h1>
         <Swiper
           modules={[Navigation, Autoplay]}

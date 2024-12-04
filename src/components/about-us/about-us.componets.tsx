@@ -2,7 +2,7 @@ import React from "react";
 
 export const AboutUsSection = () => {
   return (
-    <div className="flex flex-col py-6 h-[1000px] justify-around gap-8 w-full bg-[#f2c879] md:h-[600px] md:flex-row">
+    <div className="flex flex-col py-6 h-[1000px] justify-around gap-8 w-full bg-[#bf7d2c] md:h-[600px] md:flex-row">
       <div>
         <img
           src="image/isabelly-vitorino.png"
@@ -10,12 +10,12 @@ export const AboutUsSection = () => {
         />
       </div>
       <div className="flex flex-col md:w-[500px] md:flex-col justify-center items-center">
-        <h1 className="text-black text-3xl text-center mt-6">Sobre mim</h1>
-        <p className="mt-6 p-5 text-black">
+        <h1 className="text-white text-3xl text-center mt-6">Sobre mim</h1>
+        <p className="mt-6 p-5 text-white">
           O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto
           da indústria tipográfica e de impressos, e vem sendo utilizado desde o
         </p>
-        <button className="w-[100px] border-2 border-[#402921] bg-[#BF9075] py-2 px-2 mt-6 rounded-md">
+        <button className="w-[100px] border-2 border-white bg-[#f2c879] hover:bg-[#bf7d2c] py-2 px-2 mt-6 text-white rounded-md">
           Ler mais
         </button>
       </div>
