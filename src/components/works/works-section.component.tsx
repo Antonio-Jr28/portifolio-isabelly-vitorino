@@ -12,7 +12,7 @@ export const WorksSection = () => {
   return (
     <>
       <div className="w-auto h-auto p-6 bg-[#f2c879]">
-        <h1 className="text-4xl text-center py-6">Trabalhos Recentes</h1>
+        <h1 className="text-4xl text-center py-6">Trabalhos</h1>
         <Swiper
           modules={[Navigation, Autoplay]}
           pagination={{ clickable: true }}
